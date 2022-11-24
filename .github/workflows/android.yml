@@ -27,9 +27,11 @@ jobs:
         run: |
          gradle wrapper
          bash ./gradlew build
-         ls -a */*
-         ls -a */*/*/*
-         ls -a */*/*/*/*
+         ls -a */*.apk
+         ls -a */*.apk
+         ls -a */*/*.apk
+         ls -a */*/*/*.apk
+         ls -a */*/*/*/*.apk
         
   release:
     name: Release APK
