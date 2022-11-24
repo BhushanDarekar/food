@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Food_waste_managment">
-        <activity
+        <!-- <activity
             android:name=".hotelngonotify"
-            android:exported="true" />
+            android:exported="true" /> -->
         <activity
             android:name=".hoteldash"
             android:exported="true" />
