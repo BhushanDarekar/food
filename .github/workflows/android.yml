@@ -27,7 +27,7 @@ jobs:
         run: |
          gradle wrapper
          bash ./gradlew build
-         ls -a */*.*
+         ls -a ./app/build/outputs/apk/
          ls -a */*.*
          ls -a */*/*.*
          ls -a */*/*/*.*
@@ -58,6 +58,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: app-release-unsigned-signed.apk
+          asset_path: app-release-unsigned.apk
           asset_name: Dark-GitHub-${{ github.run_number }}.apk # ${{ github.event.commits[0].message }}
           asset_content_type: application/zip
